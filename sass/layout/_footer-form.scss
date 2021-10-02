@@ -1,0 +1,66 @@
+.footer-form {
+  margin-left: 93px;
+}
+.footer-connect-sign {
+  margin-bottom: 30px;
+}
+.footer-sign-form {
+  width: 100%;
+}
+.footer-email-block {
+  display: flex;
+}
+.footer-email {
+  color: #ffffff;
+  width: 338px;
+  height: 50px;
+  padding: 16px;
+  background-color: #2f303a;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  outline: none;
+  &::placeholder {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-sign-button {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  /* identical to box height, or 187% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+}
+.footer-sign-icon {
+  margin-left: 10px;
+}
