@@ -1,5 +1,12 @@
 .service-section {
-  padding-bottom: 94px;
+  display: none;
+  visibility: hidden;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    visibility: visible;
+    padding-bottom: 94px;
+  }
 }
 .service-title {
   text-align: center;

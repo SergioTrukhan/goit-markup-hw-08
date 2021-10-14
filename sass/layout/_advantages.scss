@@ -1,20 +1,25 @@
 .section {
-  padding-top: 60px;
+  // padding-top: 60px;
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
   }
 }
 .section-title {
+  padding-bottom: 30px;
   display: block;
   text-align: center;
   align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: var(--secondary-text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+  }
 }
 
 .advantages-container {

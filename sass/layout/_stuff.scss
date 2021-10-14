@@ -1,12 +1,23 @@
 .stuff-section {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
 
 .stuff-list {
-  display: flex;
-  margin-top: 50px;
+  display: block;
+  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .stuff-list__item {
@@ -17,14 +28,35 @@
   border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 
-  &:not(:last-child) {
+  @media screen and (min-width: 768px) {
     margin-right: 30px;
+    margin-bottom: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: -30px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 30px;
+      margin-bottom: auto;
+    }
   }
 }
 
 .stuff-card-desctiption {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 
 .stuff-text {

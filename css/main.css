@@ -259,10 +259,6 @@ ul {
   cursor: pointer;
 }
 
-.section {
-  padding-top: 60px;
-}
-
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -270,15 +266,22 @@ ul {
 }
 
 .section-title {
+  padding-bottom: 30px;
   display: block;
   text-align: center;
   align-items: center;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   color: var(--secondary-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .advantages-container {
@@ -381,7 +384,16 @@ ul {
 }
 
 .service-section {
-  padding-bottom: 94px;
+  display: none;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 1200px) {
+  .service-section {
+    display: flex;
+    visibility: visible;
+    padding-bottom: 94px;
+  }
 }
 
 .service-title {
@@ -444,14 +456,34 @@ ul {
 }
 
 .stuff-section {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 94px;
   background-color: #f5f4fa;
 }
 
+@media screen and (min-width: 1200px) {
+  .stuff-section {
+    padding-top: 94px;
+  }
+}
+
 .stuff-list {
-  display: flex;
-  margin-top: 50px;
+  display: block;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .stuff-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stuff-list {
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .stuff-list__item {
@@ -462,13 +494,45 @@ ul {
   background-color: #fff;
 }
 
+@media screen and (min-width: 768px) {
+  .stuff-list__item {
+    margin-right: 30px;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stuff-list__item {
+    margin-right: -30px;
+  }
+}
+
 .stuff-list__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .stuff-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .stuff-list__item:not(:last-child) {
+    margin-right: 30px;
+    margin-bottom: auto;
+  }
 }
 
 .stuff-card-desctiption {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .stuff-card-desctiption {
+    padding-bottom: 30px;
+  }
 }
 
 .stuff-text {
