@@ -8,12 +8,18 @@
   padding-bottom: 94px;
 }
 .portfolio-btns {
-  margin-right: auto;
-  margin-left: auto;
-  justify-content: center;
   display: flex;
-  align-items: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-right: 8px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
 }
 
 .btn:not(:last-child) {
@@ -23,6 +29,7 @@
 }
 
 .btn {
+  margin-bottom: 15px;
   border-radius: 4px;
   margin-right: 8px;
   padding: 6px 22px;
@@ -59,14 +66,22 @@
 }
 
 .portfolio-item {
-  margin-left: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
-}
-/* .portfolio-item:not(:nth-child(3n)) {
-  margin-bottom: 30px;
-} */
-.portfolio-item:not(:nth-last-child(-n + 3)) {
-  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+  }
+
+  .portfolio-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+  .portfolio-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
 }
 
 .portfolio-item:hover,
