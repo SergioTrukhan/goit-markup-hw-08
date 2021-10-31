@@ -82,6 +82,7 @@ ul {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .logo {
@@ -101,7 +102,13 @@ ul {
 }
 
 .site-nav {
-  display: flex;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav {
+    display: flex;
+  }
 }
 
 .site-nav a {
@@ -129,8 +136,15 @@ ul {
 }
 
 .connection {
-  display: flex;
-  margin-left: auto;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .connection {
+    max-width: 768px;
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .connection a {
@@ -194,6 +208,40 @@ ul {
   height: 4px;
   border-radius: 2px;
   background-color: var(--accent-color);
+}
+
+.mob-menu {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+.menu-close {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+.mob-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+
+.mob-item:not(:last-child) {
+  padding-bottom: 32px;
 }
 
 .hero {
