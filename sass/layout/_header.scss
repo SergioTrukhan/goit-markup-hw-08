@@ -135,6 +135,12 @@
   padding-left: 40px;
 }
 
+.mob-menu is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .menu-close {
   display: block;
   width: 40px;
