@@ -5,7 +5,7 @@
     menu: document.querySelector('[data-menu]'),
   };
 
-  refs.openmenuBtn.addEventListener('click', toggleMenu);
+  refs.openMenuBtn.addEventListener('click', toggleMenu);
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {

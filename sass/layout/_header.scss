@@ -45,22 +45,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  &:not(:last-child) {
-    margin-right: 50px;
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
 .connection {
   display: none;
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    display: block;
+    margin-left: 84px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
+    flex-direction: row;
     margin-left: auto;
   }
 }
+
 .connection a {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color);
@@ -69,6 +82,10 @@
   &:hover,
   &:focus {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
   }
 }
 
@@ -85,18 +102,24 @@
 }
 
 .envelope {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--primary-text-color);
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 .smarthfone {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: var(--primary-text-color);
   cursor: pointer;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
 
 .current-page {
@@ -122,6 +145,9 @@
 }
 
 .menu-open {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -133,9 +159,18 @@
   left: 0;
   padding-top: 10px;
   padding-left: 40px;
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
-.mob-menu is-hidden {
+.menu-down {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.mob-menu.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -148,6 +183,22 @@
   background-color: transparent;
   margin-left: auto;
   margin-right: 15px;
+  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  background-color: unset;
+  cursor: pointer;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-icon {
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .menu-close:hover &,
+  .menu-close:focus & {
+    fill: #2196f3;
+  }
 }
 
 .mob-item {
@@ -194,7 +245,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
 }
 
 .mob-social_link {
@@ -209,4 +260,5 @@
 
   color: #2196f3;
   padding-right: 20px;
+  padding-top: 48px;
 }
