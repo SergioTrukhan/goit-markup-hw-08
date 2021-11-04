@@ -1,18 +1,36 @@
 .footer-form {
-  margin-left: 93px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-left: 93px;
+  }
 }
 .footer-connect-sign {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 }
 .footer-sign-form {
   width: 100%;
 }
 .footer-email-block {
+  width: 450px;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 .footer-email {
   color: #ffffff;
-  width: 338px;
+  width: 450px;
   height: 50px;
   padding: 16px;
   background-color: #2f303a;
@@ -35,10 +53,13 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    width: 338px;
+  }
 }
 
 .footer-sign-button {
-  margin-left: 12px;
+  margin-top: 20px;
   width: 200px;
   height: 50px;
   background-color: #2196f3;
@@ -60,6 +81,9 @@
   color: #ffffff;
   outline: none;
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    margin-left: 12px;
+  }
 }
 .footer-sign-icon {
   margin-left: 10px;

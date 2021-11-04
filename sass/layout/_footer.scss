@@ -9,7 +9,14 @@
 
 .footer-general-container {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }
 .address-info {
   padding-top: 20px;
@@ -18,6 +25,7 @@
   color: var(--accent-second-color);
 }
 .address {
+  text-align: center;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -43,10 +51,18 @@
 }
 
 .connection-item {
-  margin-top: 9px;
+  text-align: center;
+  margin-top: 8px;
+  @media screen and (min-width: 1200px) {
+    margin-top: 9px;
+  }
 }
 
 .footer-connect {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -55,10 +71,22 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--accent-second-color);
+  @media screen and (min-width: 1200px) {
+    margin-top: auto;
+  }
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0;
+}
 .footer-container {
-  padding-right: 70px;
+  padding: auto;
+  @media screen and (min-width: 1200px) {
+    padding-right: 70px;
+  }
 }
 
 .footer-social-links {
@@ -66,9 +94,12 @@
   align-items: center;
   padding-left: auto;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 20px;
   margin-right: auto;
   margin-left: auto;
+  @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+  }
 }
 
 .footer-social-links__icon {
