@@ -22,7 +22,9 @@
 
     <!--Header-->
 
-        <!-- <header class="header portfolio-header">
+    
+
+        <header class="header portfolio-header">
             <div class="container">
                 <nav class="header__nav-content">
                     <a href="./index.html" class="logo"><span class="web">Web</span>Studio</a>
@@ -48,9 +50,68 @@
                     </li>
                 
                 </ul>
+
+                <div class="tab-connection-block">
+                    <ul class="tab-connection">
+                        <li class="connection-header-item">
+                            <a href="mailto:info@devstudio.com"><svg class="envelope header-icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope-hover-1"></use>
+                                </svg>info@devstudio.com</a>
+                
+                        </li>
+                        <li class="connection-header-item">
+                            <a href="tel:+380961111111"> <svg class="smarthfone header-icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-smartphone-1"></use>
+                                </svg>+380961111111</a>
+                        </li>
+                
+                    </ul>
+                </div>
+
+                <button class="menu-open" data-menu-open>
+                    <svg class="menu-open_icon" width="24" height="16">
+                        <use href="./images/icons.svg#icon-burger_menu"></use>
+                    </svg>
+                </button>
+                <div class="mob-menu is-hidden" data-menu>
+                    <button class="menu-close" data-menu-close>
+                        <svg class="close-icon" width="18.67" height="18.67">
+                            <use href="./images/icons.svg#icon-Vector-2"></use>
+                        </svg>
+                
+                    </button>
+                    <div class="menu-up">
+                        <ul class="mob-nav ">
+                            <li class="mob-item"><a href="./index.html">Студия</a> </li>
+                            <li class="mob-item"><a href="./portfolio.html">Портфолио</a> </li>
+                            <li class="mob-item"><a href="">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu-down">
+                        <ul class="mob-connection">
+                            <li class="mob-phone">
+                
+                                <a href="tel:+380961111111">+380961111111</a>
+                            </li>
+                            <li class="mob-mail">
+                                <a href="mailto:info@devstudio.com">
+                                    info@devstudio.com</a>
+                
+                            </li>
+                
+                
+                        </ul>
+                        <ul class="mob-social">
+                            <li class="mob-social_link">Instagram</li>
+                            <li class="mob-social_link">Twitter</li>
+                            <li class="mob-social_link">Facebook</li>
+                            <li class="mob-social_link">Linkedin</li>
+                
+                        </ul>
+                    </div>
         
             </div>
-        </header> -->
+        </header>
 
     <!--main-->
 
@@ -255,10 +316,11 @@
 
     <!--footer-->
 
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container footer-general-container">
             <div class="footer-container">
-                <a href="./index.html" class="logo"><span class="web">Web</span><span class="studio">Studio</span></a>
+                <a href="./index.html" class="logo footer-logo"><span class="web">Web</span><span
+                        class="studio">Studio</span></a>
                 <address class="address-info">
                     <p class="address">г. Киев, пр-т Леси Украинки, 26 </p>
                     <ul class="footer-connection">
@@ -326,13 +388,13 @@
     </div>
     
     
-    </footer> -->
+    </footer>
 
 
 
 
 
-
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>
