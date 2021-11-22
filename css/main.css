@@ -1704,6 +1704,13 @@ ul {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-btns {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .portfolio-btns {
     margin-right: auto;
@@ -1757,6 +1764,10 @@ ul {
   margin-left: -30px;
 }
 
+.portfolio-item {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
   .portfolio-item {
     margin-left: 30px;
@@ -1789,6 +1800,19 @@ ul {
 
 .portfolio-photo {
   display: block;
+  width: 450px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-photo {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio-photo {
+    width: 370px;
+  }
 }
 
 .portfolio-item-info {

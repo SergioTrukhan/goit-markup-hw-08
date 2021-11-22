@@ -161,6 +161,10 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: 8px;
+  @media screen and (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-right: auto;
@@ -216,6 +220,8 @@
 }
 
 .portfolio-item {
+  margin-bottom: 30px;
+
   @media screen and (min-width: 768px) {
     margin-left: 30px;
     flex-basis: calc((100% - 2 * 30px) / 2);
@@ -245,6 +251,14 @@
 
 .portfolio-photo {
   display: block;
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .portfolio-item-info {
